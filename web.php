@@ -124,7 +124,7 @@
 
                 <p>
                     Her kan koden til denne side downloades.<br>
-                    <a href="" target="_blank"><b>Link til koden på github.</b></a>
+                    <a href="https://github.com/Thorstein77/kthor" target="_blank"><b>Link til koden på github.</b></a>
                 </p>
             </div>
         </div>

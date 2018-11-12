@@ -1,0 +1,522 @@
+// Alt der gælder for mobil og højere
+
+* { // Gælder alt på hele siden
+  -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
+  box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
+}
+
+$headerColour: #3c3689;
+$headerTxt: white;
+$bodyColour: #2be6ef;
+
+body {
+  margin: 0; // Ingen kanter i siden af browser
+  background-color: $bodyColour;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; // Ingen ydre margen fra overskrifter
+  padding: 0; // Ingen indre margen fra overskrifter
+  text-align: center;
+}
+
+ul, ol {
+  margin: 0; // Ingen ydre margen fra lister
+  padding: 0; // Ingen indre margen fra lister
+  list-style-position: inside; // List punkter står på linje
+}
+
+li {
+  margin: 0; // Ingen ydre margen fra listpunkter
+}
+
+p {
+  margin: 0; // Ingen ydre margen fra paragraffer
+  padding: 0; // Ingen indre margen fra paragraffer
+}
+
+// Sikrer billeder er responsive
+img {
+  display: block; // Billeder er et element (laver linjeskift)
+  max-width: 100%; // Bredde må maks fylde 100%
+  height: auto; // Højden skal tilpasse sig
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+@mixin slideBTN(){
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 25px;
+  height: 35px;
+  width: 25px;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+header{
+  width: 100%;
+  background-color: $headerColour;
+
+  .menuBar{
+    width: 90%;
+    margin: 0 auto;
+    padding: 5vw 0;
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+      width: 15%;
+    }
+
+    .burger{
+      text-align: right;
+
+      .burgerDrop{
+        background-color: transparent;
+        border: none;
+        font-size: 40px;
+        color: $headerTxt;
+      }
+
+      .burgerCnt{
+        display: none;
+        height: auto;
+        width: 100%;
+
+        line-height: 60px;
+        font-size: 30px;
+
+        a{
+          color: $headerTxt;
+        }
+      }
+    }
+  }
+}
+
+.indexMain{
+  width: 90%;
+  margin: 0 auto;
+
+  .info{
+    padding: 5vw 0;
+
+    .flex{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+
+      p{
+        width: 55%;
+      }
+
+      div{
+        width: 40%;
+      }
+    }
+  }
+
+  .indexSlide{
+    padding: 5vw 0;
+    text-align: center;
+
+    .indexSlideShow{
+      position: relative;
+
+      .slideShow{
+        display: none;
+      }
+
+      .previous{
+        @include slideBTN;
+        left: 0;
+        top: 48%;
+      }
+
+      .next{
+        @include slideBTN;
+        right: 0;
+        top: 48%;
+      }
+    }
+  }
+}
+
+.designMain{
+  width: 90%;
+  margin: 5vw auto;
+
+  .designTitle{
+
+  }
+
+  .flex{
+    margin: 5vw 0 7vw 0;
+
+    .designObject{
+      margin: 5vw 0;
+    }
+  }
+}
+
+.designView{
+  width: 90%;
+  margin: 5vw auto;
+
+  .flex{
+    display: block;
+
+    div{
+      margin: 1vw 0;
+    }
+  }
+}
+
+.webH1{
+  margin: 5vw 0 0 0;
+}
+
+.webMain{
+  width: 90%;
+  margin: 0 auto 5vw auto;
+
+  .webInfo{
+    margin: 0 0 5vw 0;
+  }
+
+  .grid{
+    margin: 5vw 0 8vw 0;
+
+    .gridObject{
+      margin: 5vw 0;
+
+    }
+  }
+}
+
+.videoMain{
+  width: 90%;
+  margin: 0 auto;
+
+  .videoTitle{
+    margin: 5vw 0;
+  }
+
+  .flex{
+
+    .videoObject{
+      margin: 5vw 0;
+    }
+
+    #skelet{
+      padding-bottom: 5vw;
+    }
+  }
+}
+
+.videoResponsive{
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 5vw 0;
+
+  background-color: $headerColour;
+
+  .foot{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .contactInfo{
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 2fr;
+      font-size: 18px;
+      color: $headerTxt;
+
+      #mail{
+        grid-area: 1/1/2/2;
+      }
+
+      #mail2{
+        grid-area: 1/2/2/3;
+      }
+
+      #tlf{
+        grid-area: 2/1/3/2;
+      }
+
+      #tlf2{
+        grid-area: 2/2/3/3;
+      }
+    }
+
+
+
+
+    .soMe{
+      margin: auto 0;
+      font-size: 40px;
+
+      a{
+        color: $headerTxt;
+      }
+    }
+  }
+}
+
+.footerPush{
+  display: block;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 5vw 0;
+}
+
+@media screen and (min-width: 768px) {
+  // Alt der ændres i tablet stående fra mobil
+}
+
+@media screen and (min-width: 992px) {
+  // Alt der ændres i tablet liggende fra mobil og tablet stående
+
+  header{
+
+    .menuBar{
+      max-width: 1200px;
+      padding: 15px 0;
+
+      .logo{
+        width: 80px;
+      }
+
+      .burger{
+        align-items: end;
+
+        .burgerDrop{
+          font-size: 50px;
+        }
+
+        .burgerCnt{
+
+          .flex{
+            display: flex;
+            flex-direction: row;
+
+            a{
+              padding-left: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .background{
+    margin: 5% 0;
+    height: auto;
+  }
+
+  .indexMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    max-height: 450px;
+    margin: auto;
+
+    .info{
+      width: 42.5%;
+      padding: 0;
+
+      h1{
+        font-size: 28pt;
+      }
+       .flex{
+
+         p{
+           width: 40%;
+           font-size: 12pt;
+         }
+
+         div{
+           width: 55%;
+         }
+       }
+    }
+
+    .indexSlide{
+      width: 42.5%;
+      padding: 0;
+
+      h2{
+        font-size: 28pt;
+      }
+
+      .indexSlideShow{
+
+        .previous{
+          left: 0;
+          top: 50%;
+        }
+
+        .next{
+          right: 0;
+          top: 50%;
+        }
+      }
+    }
+  }
+
+  .designMain{
+    max-width: 1200px;
+
+    .designTitle{
+
+      p{
+        width: 40%;
+        margin: 0 auto;
+      }
+    }
+
+    .flex{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      width: 100%;
+      max-height: 700px;
+
+      margin: 50px 0;
+
+      .designObject{
+        width: 47.5%;
+        margin: 0;
+      }
+    }
+  }
+
+  .designView{
+    max-width: 1200px;
+    margin: 50px auto;
+
+    .flex{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      div{
+        width: 47.5%;
+        margin: 25px 0;
+      }
+    }
+  }
+
+  .webH1{
+    margin: 50px 0 0 0;
+  }
+
+  .webMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+
+    .webInfo{
+      width: 25%;
+      margin: 0;
+      padding-top: 75px;
+    }
+
+    .grid{
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 1fr;
+      grid-row-gap: 3%;
+      grid-column-gap: 3%;
+      width: 70%;
+      margin: 50px 0 30px 0;
+
+      .gridObject{
+        margin: 0;
+      }
+    }
+  }
+
+  .videoMain{
+    max-width: 1200px;
+
+    .videoTitle{
+      margin: 50px 0;
+
+      p{
+        margin: 0 auto;
+        width: 60%;
+      }
+    }
+
+    .flex{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      .videoObject{
+        width: 47.5%;
+        margin: 0 0 50px 0;
+      }
+
+      #skelet{
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  footer{
+    padding: 15px 0;
+
+    .foot{
+      max-width: 1200px;
+
+    }
+  }
+
+  .footerPush{
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+}
+
+@media print {
+  // Alt der gælder for print specifikt
+}

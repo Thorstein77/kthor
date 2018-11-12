@@ -53,7 +53,7 @@
             </ul>
             <br>
             <p>
-                Her følger et lille udpluk af de hjemmesider jeg har været med til at udvikle.
+                Her er et lille udpluk af de hjemmesider jeg har været med til at udvikle.
             </p>
         </div>
 
@@ -70,7 +70,7 @@
                 </div>
 
                 <p>
-                    Denne hjmmeside er udviklet som et af vores bunde projekter på andet semester.<br>
+                    Denne hjemmeside er udviklet som et af vores bunde projekter på andet semester.<br>
                     Dette var både et design, kommunikations og webdevelopment projekt.<br>
                     <a href="https://github.com/Thorstein77/ddp" target="_blank"><b>Link til koden på github.</b></a>
                 </p>

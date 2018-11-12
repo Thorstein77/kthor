@@ -1,0 +1,2 @@
+ErrorDocument 403 /noAccess.php
+ErrorDocument 404 /notFound.php

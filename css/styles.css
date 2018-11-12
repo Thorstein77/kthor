@@ -72,37 +72,38 @@ header {
         width: 55%; }
       .indexMain .info .flex div {
         width: 40%; }
-  .indexMain .indexSlide {
-    padding: 5vw 0;
-    text-align: center; }
-    .indexMain .indexSlide .indexSlideShow {
-      position: relative; }
-      .indexMain .indexSlide .indexSlideShow .slideShow {
-        display: none; }
-      .indexMain .indexSlide .indexSlideShow .previous {
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 25px;
-        height: 35px;
-        width: 25px;
-        text-align: center;
-        position: absolute;
-        z-index: 2;
-        background-color: rgba(255, 255, 255, 0.4);
-        left: 0;
-        top: 48%; }
-      .indexMain .indexSlide .indexSlideShow .next {
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 25px;
-        height: 35px;
-        width: 25px;
-        text-align: center;
-        position: absolute;
-        z-index: 2;
-        background-color: rgba(255, 255, 255, 0.4);
-        right: 0;
-        top: 48%; }
+
+.indexSlide {
+  padding: 5vw 0;
+  text-align: center; }
+  .indexSlide .indexSlideShow {
+    position: relative; }
+    .indexSlide .indexSlideShow .slideShow {
+      display: none; }
+    .indexSlide .indexSlideShow .previous {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 25px;
+      height: 35px;
+      width: 25px;
+      text-align: center;
+      position: absolute;
+      z-index: 2;
+      background-color: rgba(255, 255, 255, 0.4);
+      left: 0;
+      top: 48%; }
+    .indexSlide .indexSlideShow .next {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 25px;
+      height: 35px;
+      width: 25px;
+      text-align: center;
+      position: absolute;
+      z-index: 2;
+      background-color: rgba(255, 255, 255, 0.4);
+      right: 0;
+      top: 48%; }
 
 .designMain {
   width: 90%;
@@ -154,6 +155,10 @@ header {
     left: 0;
     width: 100%;
     height: 100%; }
+
+.errorPage {
+  width: 90%;
+  margin: 5vw auto; }
 
 footer {
   width: 100%;
@@ -232,17 +237,18 @@ footer {
         font-size: 12pt; }
       .indexMain .info .flex div {
         width: 55%; }
-    .indexMain .indexSlide {
-      width: 42.5%;
-      padding: 0; }
-      .indexMain .indexSlide h2 {
-        font-size: 28pt; }
-      .indexMain .indexSlide .indexSlideShow .previous {
-        left: 0;
-        top: 50%; }
-      .indexMain .indexSlide .indexSlideShow .next {
-        right: 0;
-        top: 50%; }
+
+  .indexSlide {
+    width: 42.5%;
+    padding: 0; }
+    .indexSlide h2 {
+      font-size: 28pt; }
+    .indexSlide .indexSlideShow .previous {
+      left: 0;
+      top: 50%; }
+    .indexSlide .indexSlideShow .next {
+      right: 0;
+      top: 50%; }
 
   .designMain {
     max-width: 1200px; }
@@ -313,6 +319,15 @@ footer {
         margin: 0 0 50px 0; }
       .videoMain .flex #skelet {
         padding-bottom: 0; }
+
+  .errorPage {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between; }
+    .errorPage .errorDiv {
+      width: 47.5%; }
+      .errorPage .errorDiv .indexSlide {
+        width: 100%; }
 
   footer {
     padding: 15px 0; }

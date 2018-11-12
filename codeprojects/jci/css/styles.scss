@@ -1,0 +1,2214 @@
+// Alt der gælder for mobil og højere
+
+  * { // Gælder alt på hele siden
+    -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
+    box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
+  }
+
+  body {
+    margin: 0; // Ingen kanter i siden af browser
+  }
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; // Ingen ydre margen fra overskrifter
+  padding: 0; // Ingen indre margen fra overskrifter
+  font-family: Cambria;
+}
+
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0; // Ingen ydre margen fra overskrifter
+    padding: 0; // Ingen indre margen fra overskrifter
+  }
+
+  ul, ol {
+    margin: 0; // Ingen ydre margen fra lister
+    padding: 0; // Ingen indre margen fra lister
+    list-style-position: inside; // List punkter står på linje
+  }
+
+
+p {
+  margin: 0; // Ingen ydre margen fra paragraffer
+  padding: 0; // Ingen indre margen fra paragraffer
+  font-family: 'Tajawal', sans-serif;
+}
+
+  li {
+    margin: 0; // Ingen ydre margen fra listpunkter
+  }
+
+
+  p {
+    margin: 0; // Ingen ydre margen fra paragraffer
+    padding: 0; // Ingen indre margen fra paragraffer
+  }
+
+  // Sikrer billeder er responsive
+  img {
+    display: block; // Billeder er et element (laver linjeskift)
+    max-width: 100%; // Bredde må maks fylde 100%
+    height: auto; // Højden skal tilpasse sig
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+
+$primar_color: #0A6466;
+$CTA: #B56C0C;
+$CTA_border: #EF8F0F;
+$gray: #707070;
+
+@mixin eBtn(){
+  background-color: $CTA;
+  border-color: $CTA_border;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: solid;
+  padding: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+}
+
+header {
+  grid-row: 1;
+}
+
+.dropdown {
+  position: relative; }
+
+.fa-bars {
+  color: $gray; }
+
+.dropdown_btn {
+  position: absolute;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  right: 12px;
+  top: 7px; }
+
+.dropdown_btn:hover {
+  cursor: pointer; }
+
+.h_content {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  min-width: 80%;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  outline: 5px auto #5d5d5d;
+}
+
+.menu_logo {
+  display: none;
+}
+
+.h_logo {
+  img {
+    width: 110px;
+    margin: 0 0 0 10px;
+    padding: 7px 0 0 0;
+  }
+}
+
+.h_menu1, .h_menu2, .h_menu3, .h_menu4 {
+  a {
+    color: black;
+    margin: auto;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Classico URW";
+    line-height: 30px;
+    justify-content: center;
+    display: flex;
+  }
+//Josefine start ----------------------------------------------------------------------------------------
+}
+.o_grid{
+
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 50px 300px 300px 180px 320px 250px 300px 150px 350px 200px;
+  grid-template-areas:
+          "a1 b1 c1 d1 e1 f1 g1 h1"
+          "a2 b2 c2 d2 e2 f2 g2 h2"
+          "a3 b3 c3 d3 e3 f3 g3 h3"
+          "a4 b4 c4 d4 e4 f4 g4 h4"
+          "a5 b5 c5 d5 e5 f5 g5 h5"
+          "a6 b6 c6 d6 e6 f6 g6 h6"
+          "a7 b7 c7 d7 e7 f7 g7 h7"
+          "a8 b8 c8 d8 e8 f8 g8 h8"
+          "a9 b9 c9 d9 e9 f9 g9 h9"
+          "a10 b10 c10 d10 e10 f10 g10 h10"; }
+
+
+
+.o_hvemervi{
+  grid-column: a1 / h1;
+  grid-row: a1;
+  font-family: Cambria, serif;
+  color: #5d5d5d;
+  text-align: center;
+}
+
+.o_box1{
+  grid-column: a2 / h3;
+  grid-row: a2 / a3;
+  background: linear-gradient($primar_color, white)
+}
+.o_overskrift1{
+  grid-column: a2 / d2;
+  grid-row: a2;
+  font-size: 22px;
+  font-family: Cambria, Serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.o_text1{
+  grid-column: a2 / d2;
+  grid-row: a2;
+  font-size: 20px;
+  font-family: "Tajawal";
+  color: white;
+  text-align: center;
+}
+
+.o_billede1{
+  grid-column: e2 / h2;
+  grid-row: a2;
+  background: url("../img/o_billede1.jpg")no-repeat;
+  background-size: cover;
+}
+
+
+.o_overskrift2{
+  grid-column: e3 / h3;
+  grid-row: a3;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: Cambria,serif;
+  color: white;
+  text-align: center;
+}
+
+.o_text2{
+  grid-column: e3 / h3;
+  grid-row: a3;
+  font-size: 20px;
+  font-family: "Tajawal";
+  color: white;
+  text-align: center;
+}
+
+.o_billede2{
+  grid-column: a3 / d3;
+  grid-row: a3;
+  background: url("../img/o_billede2.jpg")no-repeat center;
+  background-size: cover;
+}
+
+.o_samarbejdspartner{
+  grid-column: a4 / h4;
+  grid-row: a4;
+  font-family: Cambria,serif;
+  font-size: 20px;
+  color: #0A6466;
+  text-align: center;
+}
+
+.o_text3{
+  grid-column: a4 / h4;
+  grid-row: a4;
+  font-family: "Tajawal";
+  font-size: 18px;
+  color: #0A6466;
+  text-align: center;
+  margin: 10px;
+}
+
+.o_partner1{
+  grid-column: a5/ h5;
+  grid-row: a5;
+  background: url("../img/o_upperhill.png") no-repeat center;
+  background-size: 45%;
+  h6{
+    grid-column: a6/ h6;
+    grid-row: a6;
+    font-family: Cambria,serif;
+    font-size: 20px;
+    color: #0A6466;
+    text-align: center;
+  }
+}
+
+.o_text4{
+  grid-column: a6/ h6;
+  grid-row: a6;
+  font-family: "Tajawal";
+  font-size: 18px;
+  color: #0A6466;
+  text-align: center;
+  margin: 20px;
+}
+.o_partner2{
+  grid-column: a7/ h7;
+  grid-row: a7;
+  background: url("../img/o_sparnord.png") no-repeat center;
+  background-size: 45%;
+  h2{
+    grid-column: a8/ h8;
+    grid-row: a8;
+    font-family: Cambria,serif;
+    font-size: 20px;
+    color: #0A6466;
+    text-align: center;
+  }
+
+}
+
+.o_text5{
+  grid-column: a8/ h8;
+  grid-row: a8;
+  font-family: "Tajawal";
+  font-size: 18px;
+  color: #0A6466;
+  text-align: center;
+  margin: 20px;
+}
+
+.o_partner3{
+  grid-column: a9/ h9;
+  grid-row: a9;
+  background: url("../img/o_ditslagelse.png") no-repeat center;
+  background-size: 60%;
+  margin-left: 50px;
+  h4{
+    grid-column: a10/ h10;
+    grid-row: a10;
+    font-family: Cambria,serif;
+    font-size: 20px;
+    color: #0A6466;
+    text-align: center;
+    margin-right: 60px;
+
+  }
+}
+
+.o_text6{
+  grid-column: a10/ h10;
+  grid-row: a10;
+  font-family: "Tajawal";
+  font-size: 18px;
+  color: #0A6466;
+  text-align: center;
+  margin-right: 40px;
+}
+
+//Josefine slut -----------------------------------------------------------------------------------
+main {
+ grid-row: 2;
+}
+
+.i_main_grid {
+  height: 300px;
+}
+
+.i_bigtext {
+  margin: auto;
+  margin-top: 80px;
+
+
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    color: $gray;
+  }
+
+
+  .i_junior {
+    font-weight: 100;
+  }
+
+}
+
+.i_heads {
+  height: 170px;
+  background: url("../img/fastboi.gif") no-repeat center;
+  background-size: contain;
+  margin: 80px 0 0 0;
+}
+
+.i_intro {
+  display: grid;
+  height: 300px;
+  grid-template-rows: 1fr 1fr;
+  background: linear-gradient($primar_color, white);
+}
+
+.i_introflexbig {
+  display: none;
+}
+
+.i_introflex1 {
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.i_introflex2 {
+  grid-row: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.i_introflex1, .i_introflex2, .i_introflexbig {
+  margin: 10px 0 0 0;
+}
+
+.i_introgrid1, .i_introgrid2, .i_introgrid3, .i_introgridbig {
+  display: grid;
+  height: 126px;
+  width: 40%;
+  grid-template-rows: 2fr 1fr;
+}
+
+.i_introtext1, .i_introtext2, .i_introtext3, .i_introtextbig{
+  grid-row: 1;
+  margin-left: 16px;
+
+  p {
+    color: white;
+  }
+
+  b {
+    color: white;
+  }
+}
+
+.i_introtext2 {
+  margin-top: 15px;
+}
+
+
+.i_introcta1, .i_introcta2, .i_introcta3, .i_introctabig {
+  grid-row: 2;
+  background-color: #B56C0C;
+  border-radius: 2px;
+  border: solid 2px #EF8F0F;
+  text-align: center;
+  margin: auto;
+  padding: 3px;
+  font-size: 11px;
+
+  a {
+    color: white;
+    font-family: Cambria;
+  }
+}
+
+
+
+footer {
+  grid-row: 3;
+  background-color: $primar_color;
+
+  h3 {
+    color: white;
+
+  }
+
+  p {
+    color: white;
+
+  }
+
+  label {
+    color: white;
+  }
+
+  i {
+    color: white;
+  }
+}
+
+.f_grid {
+  display: grid;
+  width: 100%;
+}
+
+.f_formula {
+  margin: 10px 0 20px 20px;
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  input {
+    width: 70%;
+    height: 30px;
+    color: #000000;
+    padding-left: 5px;
+    border: 0;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    font-family: Cambria;
+  }
+
+  button {
+    text-align: center;
+    font-family: cambria;
+    color: white;
+    background-color: $CTA;
+    border-radius: 2px;
+    border: solid 1px $CTA_border;
+    width: 80px;
+    height: 20px;
+    font-size: 16px;
+    padding-top: 0;
+  }
+}
+
+
+
+.f_name, .f_email, .f_tlf, .f_links {
+  margin-bottom: 20px;
+}
+
+.f_coop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 0 0 20px 20px;
+}
+
+.f_box1{
+  grid-column: 1;
+}
+
+.f_box2{
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  line-height: 30px;
+}
+
+.f_contact {
+  margin: 0 0 15px 0;
+
+  .fa {
+    margin: 0 20px 0 0;
+  }
+}
+
+.f_links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 50px;
+  font-size: 30px;
+
+  i {
+    margin-right: 5px;
+  }
+}
+
+.f_text {
+  display: none;
+}
+
+.f_icons {
+  display: flex;
+  justify-content: center;
+}
+
+.i_infogrid {
+  display: grid;
+  height: 600px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background: linear-gradient($primar_color, white);
+
+  h2 {
+    color: white;
+    font-size: 14pt;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.i_textbox1, .i_textbox2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.i_textbox1 {
+  grid-row: 1;
+}
+
+.i_infobigtext1 {
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.i_infosmalltext1 {
+  margin: 0 auto;
+}
+
+.i_infopic1 {
+  grid-row: 2;
+  background: url("../img/postit.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.i_textbox2 {
+  grid-row: 3;
+}
+
+.i_infobigtext2 {
+  margin: auto auto -25px auto;
+}
+
+.i_infosmalltext2 {
+  background-color: #B56C0C;
+  border-radius: 2px;
+  border: solid 2px #EF8F0F;
+  text-align: center;
+  margin: auto;
+  padding: 3px;
+  font-size: 11px;
+
+  a {
+    color: white;
+  }
+}
+
+.i_infopic2 {
+  grid-row: 4;
+  background: url("../img/writing.jpg") no-repeat center;
+  background-size: contain;
+}
+
+
+.i_space2, .i_space1 {
+  background-color: white;
+  height:100px;
+}
+
+
+//Oliver Slut -------------------------------------------------------------
+
+/* Start Kristian ----------------------------------------------------*/
+
+.eContent{
+  display: block;
+  width: 100%;
+  min-height: 800px;
+  background: linear-gradient($primar_color, white);
+  color: white;
+}
+
+.eWebHeadline{
+  display: none;
+}
+
+.eMobHeadline1{
+  text-align: center;
+  width: 100%;
+  height: 37px;
+  color: $gray;
+}
+
+.eMobHeadline2{
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.eContentAside{
+  display: none;
+}
+
+.ePopular{
+  display: flex;
+  width: 100%;
+  height: 220px;
+  justify-content: space-around;
+
+  .eFlex{
+    width: 45%;
+
+    img {
+      height: 100px;
+    }
+  }
+}
+
+.ePopularText{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  height: 110px;
+  margin: 0 auto;
+}
+
+.ePopularPicture{
+  display: none;
+}
+
+.ePrice{
+  position: relative;
+  text-align: right;
+}
+
+.eContentAside{
+  display: block;
+  width: 100%;
+  height: 30px;
+
+  .eAsideFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.eDropBtn{
+  display: block;
+  position: relative;
+  font-size: 12pt;
+  @include eBtn();
+}
+
+.eDropContent{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 4;
+  min-width: 100%;
+  top: 394px;
+
+  background-color: white;
+  outline: 5px auto #5d5d5d;
+}
+
+.eDropBtnMon{
+  width: 100%;
+  display: inline;
+  position: relative;
+}
+
+.eDropBtn2{
+  display: block;
+  position: relative;
+  font-size: 12pt;
+  @include eBtn();
+}
+
+.eDropContent2{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 3;
+  min-width: 100%;
+  top: 394px;
+
+  background-color: white;
+  outline: 5px auto #5d5d5d;
+}
+
+.eDropBtnLoc{
+  width: 100%;
+}
+
+.eEventsList{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+
+  .eFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 1% auto;
+
+    .eFlexImg{
+      width: 39%;
+    }
+
+    .eEventText{
+      display: block;
+      width: 59%;
+      font-size: 10pt;
+      color: #0A6466;
+    }
+
+    .eEventBreadText{
+      height: 58%;
+    }
+  }
+}
+
+#eEventNav{
+  margin-left: 2%;
+}
+/* -- Slut Kristian ------------------------------------------------------ */
+
+
+//Nillerbrunch start ---------------------------------------------------
+
+
+.mHeader{
+  text-align: center;
+  h1{
+    color: $gray;
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
+}
+
+.mStartImg{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/mStartImg.jpg");
+  background-size: cover;
+  .mOpa{
+    position: absolute;
+    background-color: rgba(10, 100, 102, 0.5);
+    width: 100%;
+    height: 300px;
+  }
+}
+
+
+
+
+.mInfoText{
+  margin: 8% 10%;
+h2{
+  margin-bottom: 2%;
+  color: $gray;
+}
+}
+
+.mBackground{
+  background: linear-gradient($primar_color, white);
+  width: 100%;
+  padding: 10%;
+
+}
+
+.mFlex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+
+.mInfoPicBox{
+ margin-bottom: 8%;
+}
+
+.mInfoPic{
+  box-shadow: 2px 2px 2px black;
+  width: 100%;
+  height: 250px;
+  background-image: url("../img/mFlex1.jpg");
+  background-size: cover;
+}
+
+.mInfoPic1{
+  box-shadow: 2px 2px 2px black;
+  width: 100%;
+  height: 250px;
+  background-image: url("../img/mFlex2.jpg");
+  background-size: cover;
+}
+
+.mInfoPic2{
+  box-shadow: 2px 2px 2px black;
+  width: 100%;
+  height: 250px;
+  background-image: url("../img/mFlex3.jpg");
+  background-size: cover;
+}
+
+.mInfoPicText{
+  color: white;
+  margin: 10px 1px;
+  h2{
+    margin-bottom: 3%;
+  }
+
+}
+
+.mNews{
+  color: white;
+  h2{
+    margin-bottom: 3%;
+  }
+  button{
+    position: absolute;
+    text-align: center;
+    font-family: cambria;
+    color: white;
+    background-color: $CTA;
+    border-radius: 2px;
+    border: solid 1px $CTA_border;
+    width: 80px;
+    height: 20px;
+    font-size: 16px;
+    padding-top: 0;
+    margin-top: 1%;
+    right: 10%;
+  }
+}
+
+
+.mForm{
+input{
+  width: 70%;
+  height: 30px;
+  color: #000000;
+  padding-left: 5px;
+  border: 0;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  font-family: Cambria;
+  margin: 10px 0;
+}
+  label{
+    font-weight: bold;
+  }
+}
+
+.mNewsImg{
+  Width: 300px;
+  height: 300px;
+  display: none;
+}
+
+// Nillerbrunch slut ------------------------------------------
+
+
+ // Sofie start --------------------------------------------
+
+.kbaggrund {
+  background: linear-gradient($primar_color, white);
+}
+
+.koverskrift {
+  color: white;
+}
+
+.koverskrift1 {
+  text-align: center;
+  margin-top: 10%;
+  color: $gray;
+}
+
+.koverskrift2 {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  color: white;
+}
+
+.kbroed {
+  color: white;
+}
+
+.kflex1 {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 15%;
+  margin-top: 15%;
+}
+
+.kcon1 {
+  width: 48%;
+  padding-left: 8%;
+  margin-top: 10%;
+}
+
+.kimage1 {
+  width: 48%;
+  margin-top: 7%;
+}
+
+.kflex2 {
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+}
+
+.kcon2 {
+  width: 60%;
+  margin: 0 17% 0 23%;
+}
+
+.kflextext1 {
+  text-align: center;
+  margin: 13% 7% 0 0;
+  color: $primar_color;
+}
+
+.kcon3 {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.kflextext2 {
+  text-align: center;
+  margin: 0;
+  color: $primar_color;
+}
+
+.kcon4 {
+  width: 69%;
+  margin: 8% 0 0 8%
+}
+
+.kflextext3 {
+  text-align: center;
+  margin: 10% 0 25% 25%;
+  color: $primar_color;
+}
+
+.kbroed2 {
+  display: none;
+}
+
+.kflex3 {
+  display: none;
+}
+
+  // Sofie Slut ---------------------------------------------
+
+
+  /* 403 & 404 Start */
+
+  .nMain{
+    margin-top: 0;
+  }
+
+  .nFoot{
+    display: none;
+  }
+
+  .nHead{
+    text-align: center;
+    color: $gray;
+  }
+
+  .nContent{
+    display: flex;
+    justify-content: space-around;
+    height: 335px;
+    background: linear-gradient($primar_color, white);
+
+    .nTxt{
+      width: 55%;
+      margin-top: 23%;
+      color: #FFFFFF;
+      font-family: 'Tajawal', sans-serif;
+      text-align: right;
+      font-size: 12pt;
+
+      h2{
+        font-size: 13pt;
+      }
+      a{
+        color: $primar_color;
+        font-size: 16pt;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+
+    .nImg{
+      width: 35%;
+    }
+  }
+
+
+@media screen and (min-width: 768px) {
+  // Alt der ændres i tablet stående fra mobil
+
+
+  /* -- Kristian ------------------------------- */
+
+
+  .eMobHeadline1{
+    height: 50px;
+    margin-top: 80px;
+  }
+
+  .eContent{
+    min-height: 800px;
+
+  }
+
+  .ePopular{
+    height: 330px;
+
+    .eFlex{
+      width: 40%;
+
+      img {
+        height: 206px;
+      }
+    }
+  }
+
+  .eContentAside{
+    width: 46%;
+    margin-right: 2%;
+    margin-left: auto;
+
+
+      .eDropContent{
+
+        min-width: 45%;
+        top: 100px;
+        right: 0;
+
+        .eDropBtnMon{
+          height: 35px;
+        }
+      }
+
+
+    .eDropContent2{
+      min-width: 45%;
+      top: 517px;
+      right: 0;
+
+      .eDropBtnLoc{
+        height: 35px;
+      }
+    }
+  }
+
+  .eEventsList{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .eFlex{
+      width: 45%;
+    }
+  }
+
+
+
+  // Nillerbrunch start --------------------------------------------
+
+
+  .mHeader{
+    margin: 5%;
+
+  }
+
+  .mStartImg{
+    height: 400px;
+    .mOpa{
+      height: 400px;
+    }
+  }
+
+
+  .mNews{
+    button{
+      right: auto;
+    }
+  }
+
+  // Nillerbrunch slut ----------------------------------------------
+
+  //Josefine start------------------------------------------------------
+
+  .o_grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 50px 300px 300px 180px 320px 250px 100px 150px 0px 0px;
+    grid-template-areas:
+            "a1 b1 c1 d1 e1 f1 g1 h1"
+            "a2 b2 c2 d2 e2 f2 g2 h2"
+            "a3 b3 c3 d3 e3 f3 g3 h3"
+            "a4 b4 c4 d4 e4 f4 g4 h4"
+            "a5 b5 c5 d5 e5 f5 g5 h5"
+            "a6 b6 c6 d6 e6 f6 g6 h6"
+            "a7 b7 c7 d7 e7 f7 g7 h7"
+            "a8 b8 c8 d8 e8 f8 g8 h8"
+            "a9 b9 c9 d9 e9 f9 g9 h9"
+            "a10 b10 c10 d10 e10 f10 g10 h10"; }
+
+  .o_partner1{
+    grid-column: b5/ c5;
+    grid-row: a5;
+    background-size: 80%;
+
+  }
+  .o_partner2{
+    grid-column: d5/ e5;
+    grid-row: a5;
+    background-size: 80%;
+    margin-bottom: -30px;
+
+  }
+  .o_partner3{
+    grid-column: f5/ g5;
+    grid-row: a5;
+    background-size: 80%;
+    margin: -15px;
+  }
+
+  h6{
+    grid-column: a7/ c7;
+    grid-row: a7;
+
+  }
+  .o_text4{
+    grid-column: a8/ c8;
+    grid-row: a8;
+    text-align: left;
+  }
+
+  h2{
+    grid-column: d7/ e7;
+    grid-row: a7;
+
+  }
+  .o_text5{
+    grid-column: d8/ e8;
+    grid-row: a8;
+    text-align: left;
+  }
+
+  h4{
+    grid-column: f7/ h7;
+    grid-row: a7;
+    text-align: center;
+
+  }
+  .o_text6{
+    grid-column: f8/ h8;
+    grid-row: a8;
+    text-align: left;
+  }
+  
+  .h_logo {
+    display: none;
+  }
+
+  .h_content {
+    display: grid;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    background-color: white;
+    outline: 0 auto #5d5d5d;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr 3fr;
+  }
+
+  .dropdown_btn {
+    display: none;
+  }
+
+  .box1, .box2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7px;
+  }
+
+  .box1 {
+    grid-column: 1;
+
+  }
+
+  .box2 {
+    grid-column: 3;
+  }
+
+  .menu_logo {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1/2;
+    max-width: 115px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .i_bigtext {
+    margin-top: 170px;
+  }
+
+
+    // Oliver start ---------------------------------------------------
+
+  .f_formula input {
+    width: 30%;
+  }
+
+
+  .i_main_grid, .i_intro, .i_infogrid {
+    a{
+      font-size: 16px;
+    }
+
+  }
+
+  .i_heads {
+    margin: 101px 0 0 0;
+
+  }
+
+  .i_intro {
+    display: flex;
+    height: 200px;
+    background-color: #0A6466;
+  }
+
+  .i_introflex1, .i_introflex2, .i_introflexbig {
+    margin: 40px 0 0px 0px;
+  }
+
+  .i_infogrid {
+    display: grid;
+    height: 495px;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    background-color: #0A6466;
+  }
+
+  .i_textbox1 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .i_infopic1 {
+    grid-row: 1;
+    grid-column: 2;
+    background-size: cover;
+  }
+
+  .i_textbox2 {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .i_infopic2 {
+    grid-row: 2;
+    grid-column: 1;
+    background-size: cover;
+  }
+
+
+  // Oliver slut--------------------------------------------------------
+
+  /* 404 & 403 */
+  .nMain{
+    margin-top: 90px;
+  }
+
+  .nContent{
+    height: 500px;
+    padding-top: 5%;
+
+    .nTxt{
+      width: 45%;
+      margin-top: 14%;
+    }
+
+    .nImg{
+      width: 45%;
+    }
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 992px) {
+  // Alt der ændres i tablet liggende fra mobil og tablet stående
+
+  // Nillerbrunch start --------------------------------------------------
+
+  .mStartImg{
+    height: 500px;
+    .mOpa{
+      height: 500px;
+    }
+  }
+
+
+
+  .mFlex {
+    flex-direction: row;
+  }
+
+    .mInfoPic{
+      height: 160px;
+      width: 240px;
+    }
+
+  .mInfoPic1{
+    height: 160px;
+    width: 240px;
+  }
+
+  .mInfoPic2{
+    height: 160px;
+    width: 240px;
+  }
+
+    .mInfoPicText{
+      width: 240px;
+    }
+
+  .mNews-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mNews{
+    width: 100%;
+    h2{
+      width: 80%;
+    }
+    p{
+      width: 80%;
+    }
+  }
+
+    .mForm{
+      input {
+        width: 80%;
+      }
+  }
+
+  .mNewsImg{
+    display: block;
+    float: right;
+    width: 40%;
+    margin-bottom: 5%;
+  }
+
+  // Nillerbrunch slut ----------------------------------------------------
+
+  /* --Kristian ------------ */
+
+  .eMobHeadline1{
+
+  }
+
+
+
+
+
+  .eMobHeadline2{
+    display: none;
+  }
+
+  .eContentTop{
+    width: 100%;
+    height: 450px;
+  }
+
+  .eContent{
+    display: flex;
+    width: 100%;
+    padding: 5% 0 0 0;
+    justify-content: space-between;
+
+    .eContentAside{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      width: 24%;
+      height: 200px;
+      margin: 0 1%;
+
+
+
+      .eAsideFlex{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        text-align: center;
+        height: 150px;
+        width: 100%;
+        margin: 0;
+
+        .eDropBtn{
+
+        }
+
+        .eDropContent{
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          min-width: 24%;
+          top: 703px;
+          right: inherit;
+
+          background-color: white;
+          outline: 5px auto #5d5d5d;
+        }
+
+
+
+
+
+        .eDropContent2{
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          min-width: 24%;
+          top: 755px;
+          right: inherit;
+
+          background-color: white;
+          outline: 5px auto #5d5d5d;
+        }
+
+        .eDropBtnLoc{
+          width: 100%;
+          height: 21px;
+        }
+      }
+    }
+
+    .eContentEvents{
+      width: 100%;
+
+      .eWebHeadline{
+        display: block;
+        color: white;
+        text-align: left;
+        margin: 0 0 0 27%;
+      }
+
+      .ePopular{
+
+        .ePopularText{
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .eEventFlex{
+    display: flex;
+
+  }
+
+  .ePopular{
+    width: 99%;
+    height: 380px;
+    justify-content: space-between;
+    margin: 0;
+
+    .ePopularPicture{
+      display: block;
+      width: 25%;
+      height: 221px;
+
+      img{
+        height: 360px;
+      }
+    }
+
+    .eFlex{
+      width: 35%;
+      margin-top: 5%;
+
+      img{
+        height: 230px;
+      }
+    }
+  }
+
+  #eEventNav{
+    margin: 0 0 5% 27%;
+  }
+
+  .eEventsList{
+    width: 74%;
+
+    .eFlex{
+      width: 30%;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .eFlexImg{
+        width: 100%;
+        height: 155px;
+      }
+
+      .eEventText{
+        width: 100%;
+        height: 120px;
+      }
+    }
+  }
+
+  /* --Kristian slut --------------------------- */
+
+  // Sofie Start -----------------------------------------
+
+
+
+  .koverskrift1 {
+    text-align: center;
+    margin: 80px 0 0 0;
+    color: $gray;
+  }
+
+  .kflex1 {
+    margin: 0;
+    justify-content: space-around;
+  }
+
+  .koverskrift2 {
+    text-align: center;
+    margin: 10% 0 0 0;
+    color: white;
+  }
+
+  .koverskrift3 {
+    text-align: center;
+    margin: 0;
+    color: white;
+    width: 100%;
+  }
+
+  .kbroed {
+    display: none;
+  }
+
+  .kbroed3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    color: white;
+  }
+
+  .kcon1 {
+    width: 45%;
+    margin: 30px 0 0 0;
+  }
+
+  .koverskrift{
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kimage1 {
+    width: 45%;
+    margin: 30px 0 0 0;
+  }
+
+  #kHanErForStor{
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .kbroed2 {
+    display: block;
+    color: white;
+    margin: 0;
+  }
+
+  .kflex2{
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 5% 0 0 0;
+  }
+
+  #kflex2id{
+    margin: 5% auto;
+    width: 70%;
+  }
+
+  .kcon2 {
+    margin: 0;
+    width: 30%;
+  }
+
+  .kflextext1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .kcon3 {
+    margin: 0;
+  }
+
+  .kflextext2 {
+    margin: 0;
+  }
+
+  .kcon4 {
+    margin: 0;
+  }
+
+  .kflextext3 {
+    margin: 0;
+  }
+
+  #kcon3 {
+    margin: 0;
+  }
+
+  #kflextext2 {
+    margin: 0;
+  }
+
+  #kcon4 {
+    margin: 0;
+  }
+
+  #kflextext3 {
+    margin: 0;
+  }
+
+  .kflex3 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10% 0 0 0;
+  }
+
+  .fleximg1{
+    width: 230px;
+    margin: 0 auto;
+
+  }
+
+  .kfleximg2 {
+    display: block;
+    width: 45%;
+  }
+
+  .kcontainer {
+    display: inline-block;
+    padding: 20px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .knavn {
+    width: 100%;
+    height: 40px;
+    font-size: 13pt;
+    font-family: 'Tajawal', sans-serif;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: none;
+
+  }
+
+  .kemail {
+    @extend .knavn
+  }
+
+  .kbesked {
+    font-family: 'Tajawal', sans-serif;
+    width: 100%;
+    height: 150px;
+    font-size: 13pt;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: none;
+  }
+
+  .sendbutton {
+    background-color: $CTA;
+    border: 1px solid $CTA_border;
+    border-radius: 10px;
+    font-size: 12pt;
+    font-family: 'Tajawal', sans-serif;
+    margin-top: 15px;
+    margin-left: 75%;
+    right: 0;
+    padding: 5px 12px;
+    color: white;
+    height: 40px;
+    width: 25%;
+
+  }
+
+  .kconformula {
+    margin: 0;
+    width: 45%;
+
+  }
+
+
+
+//Oliver start --------------------------------------------------------------------------
+
+  .i_intro {
+    display: grid;
+    height: 200px;
+    grid-template-rows: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .i_introflexbig {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .i_introgrid3 {
+    display: none;
+  }
+
+  .i_introflex2 {
+    grid-row: 1;
+  }
+
+  .i_infopic1 {
+    background-position-y: -32px;
+  }
+
+  .i_infopic2 {
+    background-position-y: -90px;
+  }
+
+
+
+//oliver slut ---------------------------------------------------------------------
+
+  /* 404 & 403 */
+  .nMain{
+    margin-top: 90px;
+  }
+
+  .nContent{
+    height: 410px;
+    padding-top: 2%;
+
+    .nTxt{
+      width: 45%;
+      margin-top: 11%;
+    }
+
+    .nImg{
+      width: 45%;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+
+  header {
+    height: 100px;
+  }
+
+  //oliver start --------------------------------------------------------------
+
+  .i_bigtext {
+    margin-top: 80px;
+  }
+
+  .f_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 18px;
+  }
+
+  .f_formula {
+    grid-column: 1;
+    margin: 45px 0 0 115px;
+  }
+
+  .f_formula button {
+    position: absolute;
+  }
+
+  //oliver slut -----------------------------------------------------
+
+  /* --Kristian ------------ */
+
+  .eMobHeadline1{
+    margin-top: 0;
+  }
+
+    .eContent{
+      padding: 2% 0 0 0;
+      height: 1400px;
+
+      .eContentEvents{
+        height: 100%;
+        width: 100%;
+
+        .eContentTop{
+          height: 30%;
+
+          .eWebHeadline{
+            height: 10%;
+          }
+        }
+      }
+    }
+
+    .ePopular{
+      height: 90%;
+
+
+
+      .ePopularPicture{
+        height: 100%;
+
+        img{
+          height: 100%;
+        }
+      }
+
+
+      .eFlex{
+        margin: 2% 0 0 0;
+
+        img{
+
+          height: 74%;
+        }
+
+
+      }
+    }
+
+  .eEventFlex{
+    margin: 1% 0 0 0;
+    height: 900px;
+
+    .eContentAside{
+      margin: 0.5% 1% 0 1%;
+
+      .eAsideFlex{
+
+        .eDropContent{
+          display: none;
+          top: 705px;
+
+        }
+
+        .eDropContent2{
+          display: none;
+          top: 760px;
+
+        }
+      }
+    }
+
+    .eEventsList{
+
+      .eFlex{
+        display: block;
+
+
+        .eFlexImg{
+
+          height: auto;
+        }
+      }
+    }
+  }
+
+
+
+  /* -- Kristian ------------- */
+
+  /* Nillerbrunch start ------------------------- */
+
+
+  .mHeader{
+    h1{
+      margin-top: 5%;
+    }
+  }
+
+  .mStartImg{
+    height: 650px;
+    .mOpa{
+      height: 650px;
+    }
+
+  }
+
+  .mInfoText{
+    margin: 5% 20%;
+  }
+
+  .mInfoPic{
+    height: 160px;
+    width: 320px;
+  }
+
+  .mInfoPic1{
+    height: 160px;
+    width: 320px;
+  }
+
+  .mInfoPic2{
+    height: 160px;
+    width: 320px;
+  }
+
+  .mInfoPicText{
+    width: 320px;
+  }
+  
+
+
+
+
+
+  /* Nillerbrunch slut ---------------------------- */
+
+
+  //oliver start ----------------------------------------------------------------
+
+  .f_name, .f_email, .f_tlf, .f_links {
+    margin-bottom: 12px;
+  }
+
+  .f_coop {
+    margin: 0 0 0 0;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+
+  .f_box1 {
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 45px;
+  }
+
+  .f_box2 {
+    grid-row: 2;
+    grid-column: 1;
+    line-height: 50px;
+  }
+
+  .f_contact {
+    grid-column: 3;
+    display: grid;
+    grid-template-rows: 4fr 4fr;
+  }
+
+  .f_contact {
+    margin: 0 0 15px 0;
+
+    .fa {
+      margin: 0 20px 55px 0;
+    }
+  }
+
+  .f_formula input {
+    width: 65%;
+  }
+
+  .f_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .f_icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .f_links {
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0 30px 0;
+    padding: 0 510px;
+  }
+
+  .i_infopic1 {
+    background-position-y: 0;
+    background-size: contain;
+    margin-top: 20px;
+  }
+
+  .i_infopic2 {
+    background-position-y: 0;
+    background-size: contain;
+  }
+
+  //oliver slut -----------------------------------------------------------------------
+
+//Josefine start-----------------------------------------------------------------
+  .o_grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 50px 600px 600px 150px 500px 50px 50px 0px 0px;
+    grid-template-areas:
+            "a1 b1 c1 d1 e1 f1 g1 h1"
+            "a2 b2 c2 d2 e2 f2 g2 h2"
+            "a3 b3 c3 d3 e3 f3 g3 h3"
+            "a4 b4 c4 d4 e4 f4 g4 h4"
+            "a5 b5 c5 d5 e5 f5 g5 h5"
+            "a6 b6 c6 d6 e6 f6 g6 h6"
+            "a7 b7 c7 d7 e7 f7 g7 h7"
+            "a8 b8 c8 d8 e8 f8 g8 h8"
+            "a9 b9 c9 d9 e9 f9 g9 h9"
+            "a10 b10 c10 d10 e10 f10 g10 h10"; }
+
+
+
+  .o_partner1{
+    grid-column: b5/ c5;
+    grid-row: a5;
+    background-size: 70%;
+
+    h6{
+      grid-column: a7/ c7;
+      grid-row: a7;
+      margin-top: 70px;
+
+    }
+  }
+  .o_partner2{
+    grid-column: d5/ e5;
+    grid-row: a5;
+    background-size: 65%;
+   margin-top: 30px;
+    h2{
+      grid-column: d7/ e7;
+      grid-row: a7;
+      margin-top: 80px;
+
+    }
+
+
+  }
+  .o_partner3{
+    grid-column: f5/ g5;
+    grid-row: a5;
+    background-size: 73%;
+    margin-bottom: 30px;
+    h4{
+      grid-column: f7/ h7;
+      grid-row: a7;
+      text-align: center;
+      margin-top: 35px;
+
+    }
+
+  }
+
+  .o_text4{
+    grid-column: a8/ c8;
+    grid-row: a8;
+    text-align: left;
+
+  }
+
+
+  .o_text5{
+    grid-column: d8/ e8;
+    grid-row: a8;
+    text-align: left;
+  }
+
+
+  .o_text6{
+    grid-column: f8/ h8;
+    grid-row: a8;
+    text-align: left;
+    margin-top: 30px;
+
+  }
+
+  .koverskrift1 {
+    text-align: center;
+    margin: 0;
+    color: $gray;
+  }
+
+  /* 404 & 403 */
+  .nMain{
+    margin-top: 0;
+  }
+
+  .nContent{
+    height: 440px;
+    padding-top: 2%;
+
+    .nTxt{
+      width: 45%;
+      margin-top: 100px;
+    }
+
+    .nImg{
+      width: 45%;
+    }
+  }
+}
+
+
+
+@media print {
+  // Alt der gælder for print specifikt
+}

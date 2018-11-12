@@ -1,0 +1,142 @@
+<!doctype html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Font awesome embed code !-->
+    <script src="https://use.fontawesome.com/1823101846.js"></script>
+
+    <!-- Font emdeb code  -->
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:500" rel="stylesheet">
+
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>JCI Slagelse</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../img/favicon-16x16.png" sizes="16x16" />
+
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+<div class="grid">
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="dropdown_btn">
+                    <i class="fa fa-bars fa-3x"></i>
+                </button>
+                <div class="h_content">
+                    <div class="box1">
+                        <div class="h_menu1">
+                            <a href="../medlemskab.html">Medlemskab</a>
+                        </div>
+
+                        <div class="h_menu2">
+                            <a href="../events.html">Events</a>
+                        </div>
+                    </div>
+
+                    <div class="box2">
+                        <div class="h_menu3">
+                            <a href="../kontakt.html">Kontakt</a>
+                        </div>
+
+                        <div class="h_menu4">
+                            <a href="../omos.html">Om Os</a>
+                        </div>
+                    </div>
+
+                    <div class="menu_logo">
+                        <a href="../index.html">
+                            <img src="../img/Danmark_Print_6cm_300dpi.png">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="h_logo">
+                <a href="../index.html">
+                    <img src="../img/Danmark_Print_6cm_300dpi.png">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="nMain">
+        <h1 class="nHead">404</h1>
+        <div class="nContent">
+            <div class="nTxt">
+                <h2>Jeg kan ikke finde siden
+                    <br>
+                    du leder efter.</h2><br>
+                <p>Tryk <a href="../index.html">her</a>
+                    <br>for at komme tilbage
+                    <br>til forsiden.</p>
+            </div>
+            <div class="nImg">
+                <img src="../img/jeppe.png">
+            </div>
+        </div>
+    </main>
+
+    <footer class="nFoot">
+
+    </footer>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (e) {
+
+        var navOpen = 0;
+
+        $(".dropdown_btn").click(function () {
+            if (navOpen == 1) {
+                $(".h_content").stop().slideUp(200);
+                navOpen = 0;
+            }
+            else {
+                $(".h_content").stop().slideDown(200);
+                navOpen = 1;
+            }
+        });
+
+        $(window).resize(function (e) {
+            var width = $(window).width();
+
+            if (width >= 767) {
+                $(".h_content").css( "display", "grid");
+            }
+            else {
+                $(".h_content").css("display", "none");
+                navOpen = 0;
+            }
+        });
+
+
+    });
+</script>
+</body>
+</html>

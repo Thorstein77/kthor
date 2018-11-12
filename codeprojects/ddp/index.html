@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Dominio de Pontas</title>
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+    <meta name="description" content="Rødvin, hvidvin eller rosévin, Dominio de Pontas vin til enhver lejlighed.
+    Læs mere om vores spændende spanske vine her.">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="Dominio de Pontas">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.robinwitzner.dk/index.html">
+    <meta property="og:image" content="http://robinwitzner.dk/images/cvr.jpg">
+    <meta property="og:description" content="Rødvin, hvidvin eller rosévin, Dominio de Pontas vin til enhver lejlighed. Læs mere om vores spændende spanske vine her.">
+    <meta property="og:locale" content="da_DK">
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/ddp.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!-- i <body> har man alt indhold på siden -->
+<body id="tsr_body">
+    <div class="tsr_bkg">
+    </div>
+    <article class="tsr_bnr">
+        <img src="images/ddp_logo_mbl.png" alt="Vinmarkerne hos Dominio de Pontas">
+        <p>
+            Dominio de Pontas er en danskejet vingård i Navarra regionen i det nordlige Spanien.
+            Vi fokuserer på at producere vin af høj kvalitet, baseret på Cabernet Sauvignon,
+            Garnacha og Chardonnay som er blandt de druesorter der vokser bedst i Navarra.
+        </p>
+        <a href="ddp_red.html">
+            <div class='line'>
+                <span class='text'>Læs mere</span>
+            </div>
+        </a>
+    </article>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            var timeout = null;
+            var transitionEnd = true;
+
+            jQuery('.line').on("mouseenter", function(e) {
+                if (!transitionEnd)
+                    return;
+
+                _this = jQuery(this);
+
+                _this.addClass("hide-text");
+
+                timeout = setTimeout(function(e) {
+                    _this.addClass("in");
+                }, 200);
+
+                transitionEnd = false;
+            }).on("mouseleave", function(e) {
+                clearTimeout(timeout);
+
+                jQuery(this).addClass("out").one("transitionend", function(e) {
+                    transitionEnd = true;
+                    jQuery(this).removeClass("hide-text out in");
+                });
+            });
+        });
+    </script>
+</body>
+</html>

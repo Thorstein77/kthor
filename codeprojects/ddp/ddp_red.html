@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Dominio de Pontas｜Rødvin</title>
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+    <meta name="description" content="Her kan du læse om Dominio de Pontas' bløde,
+    men syrlige spanske Cabernet Sauvignon, med duftnoter af cedartræ og bær.">
+    <meta name="keywords" content="vin til and, rødvinssauce">
+    <meta property="og:title" content="Dominio de Pontas">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.robinwitzner.dk/ddp_red.html">
+    <meta property="og:image" content="http://robinwitzner.dk/images/cvr.jpg">
+    <meta property="og:description" content="Rødvin, hvidvin eller rosévin, Dominio de Pontas vin til enhver lejlighed. Læs mere om vores spændende spanske vine her.">
+    <meta property="og:locale" content="da_DK">
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/ddp.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!-- i <body> har man alt indhold på siden -->
+<body id="body_red">
+    <header class="red_cvr" data-parallax="scroll" data-image-src="images/cvr.jpg">
+        <div class="logo_box">
+            <img class="logo_mbl" src="images/ddp_logo_mbl.png" alt="Dominio de Pontas">
+            <img class="logo_web" src="images/ddp_logo_web.png" alt="Dominio de Pontas">
+        </div>
+        <nav id="navMobileRed" class="drp_box">
+            <i id="navBars" class="drp_btn fas fa-bars fa-3x"></i>
+            <div id="navElements">
+                <a href="ddp_red.html">Rødvin</a>
+                <a href="ddp_white.html">Hvidvin</a>
+                <a href="ddp_rose.html">Rosévin</a>
+            </div>
+        </nav>
+    </header>
+    <article id="grid2">
+        <section id="red_pop_box">
+            <h1>
+                Rødvin
+            </h1>
+            <p>
+                Druerne i vores Cabernet Sauvignon er blandt de druer der trives bedst i Navarra.
+                Hos Dominio de Pontas lagrer vi vores Cabernet Sauvignon på amerikanske egetræsfade.
+            </p>
+        </section>
+        <div id="red_zoom_1" class="red_zoom"></div>
+        <section id="red_info_box_1" class="red_info_box">
+            <h2>
+                Om vinen
+            </h2>
+            <p>
+                Cabernet Sauvignon fra Dominio de Pontas har en blød og fyldig smag,
+                med duftnoter af frugt, brombær, cedertræ og solbær.
+                Den bløde smag gør vinen velegnet til en række retter,
+                men den passer også til en hyggelig, afslappet aften med vennerne.
+                Disse egenskaber gør at Cabernet Sauvignon er et rigtigt godt valg som gave,
+                f.eks. værtindegave.
+            </p>
+        </section>
+        <div id="red_zoom_2" class="red_zoom"></div>
+        <section id="red_info_box_2" class="red_info_box">
+            <h2>
+                Lagring
+            </h2>
+            <p>
+                Vi lagrer vores rødvin på amerikanske egetræsfade.
+                Disse er valgt da de indeholder lavere mængder af garvesyre end fade af andre sorter.
+                Denne egenskab gør fadene af amerikansk eg til det idéele valg til spanske vine.
+                Efter fadlagring lagrer vi vinen i flaskerne i minimum fire år.
+                Dette gør vi så vinen er klar til at blive drukket når du finder den i butikken,
+                men den kan også sagtens tåle at ligge længere.
+            </p>
+        </section>
+        <div id="red_zoom_3" class="red_zoom"></div>
+        <section id="red_info_box_3" class="red_info_box">
+            <h2>
+                Mad
+            </h2>
+            <p>
+                Cabernet Sauvignon er et godt valg som vin til and eller oksekød, grundet den varme,
+                fyldige smag af frugt. Vinen vil også passe til retter med en snert af lakrids.
+                Cabernet Sauvignon er også velegnet til rødvinssauce til f.eks. oksesteg,
+                vi anbefaler at servere samme vin som der bruges i saucen.
+            </p>
+        </section>
+    </article>
+    <footer id="ftr">
+        <a href="https://www.facebook.com/">
+            <i class="fab fa-facebook-square fa-3x"></i>
+        </a>
+        <a href="https://www.instagram.com/">
+            <i class="fab fa-instagram fa-3x"></i>
+        </a>
+        <a href="https://www.pinterest.dk/">
+            <i class="fab fa-pinterest-square fa-3x"></i>
+        </a>
+        <a id="topRed">
+            <i class="fas fa-arrow-up fa-3x"></i>
+        </a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="parallax.js-1.5.0/parallax.js"></script>
+    <script>
+        $(document).ready(function (e) {
+
+            $(document).ready(function(e){
+                $(".logo_box").fadeIn(2000);
+            });
+
+            $("#navMobileRed").click(function (e) {
+                $("#navElements").slideToggle(250);
+            });
+
+            $(window).resize(function (e) {
+                var width = $(window).width();
+
+                if(width > 768) {
+                    $("#navElements").css({"display":"-webkit-flex", "display":"flex"});
+                } else {
+                    $("#navElements").css("display", "none");
+                }
+            });
+
+            $('#topRed').click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>

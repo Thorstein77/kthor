@@ -1,0 +1,387 @@
+<!doctype html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>JCI Slagelse Kontakt</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Sofie Damsgaard">
+    <meta name="copyright" content="This webpage has been developed by Multimedia Design
+    and communication students at EASJ Slagelse for JCI Slagelse">
+    <meta name="keywords" content="Kontakt, Bestyrelse">
+    <meta name="description" content="Kontakt side for JCI Slagelse">
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="JCI Slagelse - Kontakt">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.oliversommer.dk/Kontakt">
+    <meta property="og:image" content="https://www.oliversommer.dk/envelope.png">
+    <meta property="og:description" content="Her kan du kontakte JCI Slagelse">
+    <meta property="og:locale" content="da_DK">
+
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <script src="https://use.fontawesome.com/1823101846.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:500" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+<div class="grid">
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="dropdown_btn">
+                    <i class="fa fa-bars fa-3x"></i>
+                </button>
+                <div class="h_content">
+                    <div class="box1">
+                        <div class="h_menu1">
+                            <a href="medlemskab.html">Medlemskab</a>
+                        </div>
+
+                        <div class="h_menu2">
+                            <a href="events.html">Events</a>
+                        </div>
+                    </div>
+
+                    <div class="box2">
+                        <div class="h_menu3">
+                            <a href="kontakt.html">Kontakt</a>
+                        </div>
+
+                        <div class="h_menu4">
+                            <a href="omos.html">Om Os</a>
+                        </div>
+                    </div>
+
+                    <div class="menu_logo">
+                        <a href="index.html">
+                            <img src="img/Danmark_Print_6cm_300dpi.png" alt="JCI logo">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="h_logo">
+                <a href="index.html">
+                    <img src="img/Danmark_Print_6cm_300dpi.png" alt="JCI logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div>
+            <h1 class="koverskrift1">
+                KONTAKT
+            </h1>
+        </div>
+
+        <div class="kbaggrund">
+            <div class="kflex1">
+                <div class="kcon1">
+                    <h2 class="koverskrift">
+                        VI VIL GERNE
+                        HØRE FRA DIG
+                    </h2>
+
+                    <p class="kbroed">
+                        <br>
+                        <br>
+                        Hos JCI Slagelse
+                        kan vi hjælpe dig
+                        med at danne et
+                        overblik. Skriv til os
+                        ved hjælp af formularen,
+                        i bunden af siden.
+                    </p>
+
+                    <p class="kbroed2">
+                        <br>
+                        Her hos JCI Slagelse kan vi hjælpe dig med at danne et overblik,
+                        udvikle dine personlige kompetencer indenfor lederskab, projektstyring og så meget mere.
+                        Vi ønsker at hjælpe dig med at skabe et større netværk, tætte forretningsforbindelser
+                        men ikke mindst også at du har nogle mennesker som du kan sparre med når idéerne
+                        får frit spil og skal være mere end blot idéer.
+                        Du kan kontakte os ved hjælp af kontaktformularen herunder, eller du kan finde vores
+                        kontaktinformation under bestyrelsen her på siden. Så kan du komme i kontakt
+                        med lige den af os du ønsker.
+                    </p>
+                </div>
+
+                <div class="kimage1">
+                    <img src="img/manonphone.png" alt="Mand der snakker i telefon" id="kHanErForStor">
+                </div>
+            </div>
+
+        <div class="kflex3">
+            <div class="kfleximg2">
+                <img src="img/envelope.png" alt="konvolut for kontaktformular">
+            </div>
+
+            <div class="kconformula">
+
+                <div>
+                    <h2 class="koverskrift3">
+                        KONTAKT OS
+                    </h2>
+                    <p class="kbroed3">
+                        <br>
+                        Du kan kontakte os ved hjælp af vores kontaktformular
+                        som du finder lige under her.
+                    </p>
+                </div>
+
+                <div class="kcontainer">
+
+                    <label for="fname"></label>
+                    <input class="knavn" type="text" id="fname" name="firstname" placeholder="     Navn"> <br><br>
+
+                    <label for="email"></label>
+                    <input class="kemail" type="text" id="email" name="lastname" placeholder="     E-mail"> <br><br>
+
+                    <label for="besked"></label>
+                    <textarea class="kbesked" id="besked" name="subject" placeholder="     Skriv din besked her..."></textarea>
+
+                    <br>
+
+                    <input class="sendbutton" type="Submit" value="Send">
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="koverskrift2">
+                BESTYRELSEN
+            </h2>
+        </div>
+
+        <div class="kflex2">
+
+            <div class="kcon2">
+                <div class="fleximg1">
+                    <img src="img/manone.png" alt="Lasse Andersen - Ansvarlig for erhvervskontakter">
+                </div>
+
+                    <p class="kflextext1">
+                        <b>Ansvarlig for erhvervskontakter</b>
+                    <br>
+                    Lasse Andersen
+                    <br>
+                    bus@jci-slagelse.dk
+                    <br>
+                    29 46 64 17
+                    </p>
+             </div>
+
+            <div class="kcon2">
+                <div class="fleximg1">
+                    <img src="img/womanone.png" alt="Anna Strøbæk - Projektansvarlig">
+                </div>
+
+                <p class="kflextext2">
+                    <b>Projektansvarlig</b>
+                    <br>
+                    Anna Strøbæk
+                    <br>
+                    pro@jci-slagelse.dk
+                    <br>
+                    27 50 97 55
+                </p>
+            </div>
+
+            <div class="kcon2">
+                <div class="fleximg1">
+                    <img src="img/womantwo.png" alt="Caroline Sørensen - Formand">
+                </div>
+
+                <p class="kflextext3">
+                    <b>Formand</b>
+                    <br>
+                    Caroline Sørensen
+                    <br>
+                    lp@jci-slagelse.dk
+                    <br>
+                    21 26 96 25
+                </p>
+            </div>
+        </div>
+
+        <div class="kflex2" id="kflex2id">
+            <div class="kcon2" id="kcon3">
+                <div class="fleximg1">
+                    <img src="img/womanone.png" alt="Kamilla Jongejan - Mødeansvarlig">
+                </div>
+
+                <p class="kflextext2" id="kflextext2">
+                    <b>Mødeansvarlig</b>
+                    <br>
+                    Kamilla Jongejan
+                    <br>
+                    moek@jci-slagelse.dk
+                    <br>
+                    51 35 90 49
+                </p>
+            </div>
+
+            <div class="kcon2" id="kcon4">
+                <div class="fleximg1">
+                    <img src="img/womantwo.png" alt="Mie Lyngstrøm - Medlemsansvarlig">
+                </div>
+
+                <p class="kflextext3" id="kflextext3">
+                    <b>Medlemsansvarlig</b>
+                    <br>
+                    Mie Lyngstrøm
+                    <br>
+                    mec@jci-slagelse.dk
+                    <br>
+                    21 49 08 49
+                </p>
+            </div>
+
+        </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="f_grid">
+            <div class="f_formula">
+
+                <h3>INTERESSERET?</h3>
+
+                <p>Bliv kontaktet for mere informaiton.</p>
+
+                <label class="f_name">Dit Navn</label>
+                <div class="f_name">
+                    <input type="text" placeholder="Navn">
+                </div>
+
+                <label class="f_email">E-mail</label>
+                <div class="f_email">
+                    <input type="email" placeholder="E-mail">
+                </div>
+
+                <label class="f_tlf">Mobil</label>
+                <div class="f_name">
+                    <input type="tel" placeholder="Mobil">
+                </div>
+
+                <button type="submit">SEND</button>
+            </div>
+
+            <div class="f_coop">
+
+                <div class="f_box1">
+
+                    <h3>VI SAMARBEJDER MED</h3>
+
+                    <p>I JCI Slagelse har vi indgået partnerskab med flere virksomheder.</p>
+
+                </div>
+
+                <div class="f_box2">
+
+                    <h3>The Upper Hill</h3>
+                    <h3>Spar Nord</h3>
+                    <h3>Dit Slagelse</h3>
+
+                </div>
+
+            </div>
+
+            <div class="f_contact">
+
+                <div class="f_text">
+                    <h3>KONTAKT INFORMATION</h3>
+
+                    <p>Du kan kontakte os på:</p>
+                </div>
+
+                <div class="f_icons">
+
+                    <i class="fa fa-envelope"> JCI@hotmail.com</i>
+
+                    <i class="fa fa-phone"> +45 11 22 33 44</i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="f_links">
+
+            <a href="">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+
+            <a href="">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+
+            <a href="">
+                <i class="fa fa-linkedin"></i>
+            </a>
+
+        </div>
+    </footer>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (e) {
+
+        var navOpen = 0;
+
+        $(".dropdown_btn").click(function () {
+            if (navOpen == 1) {
+                $(".h_content").stop().slideUp(200);
+                navOpen = 0;
+            }
+            else {
+                $(".h_content").stop().slideDown(200);
+                navOpen = 1;
+            }
+        });
+
+        $(window).resize(function (e) {
+            var width = $(window).width();
+
+            if (width >= 767) {
+                $(".h_content").css( "display", "grid");
+            }
+            else {
+                $(".h_content").css("display", "none");
+                navOpen = 0;
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

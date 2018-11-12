@@ -1,0 +1,966 @@
+<!doctype html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>JCI Slagelse Begivenheder</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Kristian Thorsteinsson">
+    <meta name="copyright" content="This webpage has been developed by Multimedia Design
+    and communication students at EASJ Slagelse for JCI Slagelse">
+    <meta name="description" content="Events og møder for JCI Slagelse">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="JCI Slagelse - Events">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.oliversommer.dk/Events">
+    <meta property="og:image" content="https://www.oliversommer.dk/img.jpg">
+    <meta property="og:description" content="">
+    <meta property="og:locale" content="da_DK">
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/simplePagination.css" rel="stylesheet" type="text/css">
+    <!-- Tillader brug af Font Awesome ikoner -->
+    <script src="https://use.fontawesome.com/1823101846.js"></script>
+
+
+    <link rel="stylesheet" href="https://use.typekit.net/fln2dwx.css">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+
+<div class="grid">
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="dropdown_btn">
+                    <i class="fa fa-bars fa-3x"></i>
+                </button>
+                <div class="h_content">
+                    <div class="box1">
+                        <div class="h_menu1">
+                            <a href="medlemskab.html">Medlemskab</a>
+                        </div>
+
+                        <div class="h_menu2">
+                            <a href="events.html">Events</a>
+                        </div>
+                    </div>
+
+                    <div class="box2">
+                        <div class="h_menu3">
+                            <a href="kontakt.html">Kontakt</a>
+                        </div>
+
+                        <div class="h_menu4">
+                            <a href="omos.html">Om Os</a>
+                        </div>
+                    </div>
+
+                    <div class="menu_logo">
+                        <a href="index.html">
+                            <img src="img/Danmark_Print_6cm_300dpi.png" alt="JCI logo">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="h_logo">
+                <a href="index.html">
+                    <img src="img/Danmark_Print_6cm_300dpi.png" alt="JCI logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="eMobHeadline1">EVENTS</h1>
+        <div class="eContent">
+            <div class="eContentEvents">
+                <div class="eContentTop">
+                    <h2 class="eMobHeadline2">Populære lige nu</h2>
+                    <h2 class="eWebHeadline">Events JCI <br>Slagelse 2018</h2>
+
+                    <div class="ePopular">
+                        <div class="ePopularPicture">
+                            <img src="img/baloon.png" alt="Upcoming Events">
+                        </div>
+
+                        <div class="eFlex">
+                            <img src="img/eGame.png" alt="Konference" class="eWebImgWidth">
+
+                            <div class="ePopularText">
+                                <div>
+                                    <h3>Europakonference / Letland: 6/6-18</h3>
+                                    <p>Konference for Europa. Her vil være deltagere fra hele verden.</p>
+                                </div>
+                                <p class="ePrice">750,-</p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex">
+                            <img src="img/eTypewriter.png" alt="Forretningsmøde">
+
+                            <div class="ePopularText">
+                                <div>
+                                    <h3>FK 2018 / København: 6/4-18</h3>
+                                    <p>Forårskongres for Danmark i København.</p>
+                                </div>
+                                <p class="ePrice">600,-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="eEventFlex">
+                    <aside class="eContentAside">
+                        <div class="eAsideFlex">
+                            <h3 class="eDropContentHeadline">Filtrer efter:</h3>
+
+                            <button class="eDropBtn">Måned</button>
+                            <div class="eDropContent">
+                                <button class="eDropBtnMon eMon1Btn">Januar</button>
+                                <button class="eDropBtnMon eMon2Btn">Febuar</button>
+                                <button class="eDropBtnMon eMon3Btn">Marts</button>
+                                <button class="eDropBtnMon eMon4Btn">April</button>
+                                <button class="eDropBtnMon eMon5Btn">Maj</button>
+                                <button class="eDropBtnMon eMon6Btn">Juni</button>
+                                <button class="eDropBtnMon eMon7Btn">Juli</button>
+                                <button class="eDropBtnMon eMon8Btn">August</button>
+                                <button class="eDropBtnMon eMon9Btn">September</button>
+                                <button class="eDropBtnMon eMon10Btn">Oktober</button>
+                                <button class="eDropBtnMon eMon11Btn">November</button>
+                                <button class="eDropBtnMon eMon12Btn">December</button>
+                                <button class="eDropBtnMon eMon0Btn">Alle</button>
+                            </div>
+
+                            <button class="eDropBtn2">Lokalitet</button>
+                            <div class="eDropContent2">
+                                <button class="eDropBtnLoc eLoc1Btn">Lokal</button>
+                                <button class="eDropBtnLoc eLoc2Btn">National</button>
+                                <button class="eDropBtnLoc eLoc3Btn">International</button>
+                                <button class="eDropBtnLoc eLoc0Btn">Alle</button>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Her starter liste over events.
+                    Ude i den virkelige verden ville vi sætte disse op i PHP -->
+
+                    <div class="eEventsList">
+                        <div class="eFlex ePaginate eMon1 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eTeam.png" alt="team meeting">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Afdelingsmøde: 10/1-18</h3>
+                                <p class="eEventBreadText">
+                                    Afdelingsmøde for JCI Slagelse.
+                                    Emner vil generelt omhandle vores projekter i Slagelse,
+                                    men fastlægges tættere på møderne.
+                                </p>
+                                <p class="ePrice">pris her</p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon1 eNational">
+                            <div class="eFlexImg">
+                                <img src="img/eFood.png" alt="Generalforsamling">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Generalforsamling i regionen: 23/1-18</h3>
+                                <p class="eEventBreadText">
+                                    Årlig generalforsamling i JCI Sjælland.
+                                    Her vælges ny bestyrelse samt næstformand for regionen.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon2 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eFood.png" alt="Generalforsamling">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Generalforsamling i Slagelse: 2/2-18</h3>
+                                <p class="eEventBreadText">
+                                    Årlig generalforsamling i JCI Slagelse.
+                                    Her vælges ny bestyrelse samt næstformand for afdelingen.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon2 eNational">
+                            <div class="eFlexImg">
+                                <img src="img/eRunning.png" alt="gruppeaktiviteter">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Indledende runde SSDB: 3/2-18</h3>
+                                <p class="eEventBreadText">
+                                    Snak Så De'Batter.
+                                    Opbyg selvtilliden til, og evner til at debattere foran et publikum.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon2 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eTeam.png" alt="team meeting">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Afdelingsmøde: 7/2-18</h3>
+                                <p class="eEventBreadText">
+                                    Afdelingsmøde for JCI Slagelse.
+                                    Emner vil generelt omhandle vores projekter i Slagelse,
+                                    men fastlægges tættere på møderne.
+                                </p>
+                                <p class="ePrice">675,-</p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon2 eNational">
+                            <div class="eFlexImg">
+                                <img src="img/eFistBump.png" alt="Teamwork">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Frist for Awards: 26/2-18</h3>
+                                <p class="eEventBreadText">
+                                    Frist for nominering til Grangia Award Show.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon3 eNational">
+                            <div class="eFlexImg">
+                                <img src="img/eBus.png" alt="Kursus">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>DLP Training I: 3/3-18</h3>
+                                <p class="eEventBreadText">
+                                    Kursus med fokus på at uddanne næstformænd.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon3 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eTeam.png" alt="team meeting">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Afdelingsmøde: 8/3-18</h3>
+                                <p class="eEventBreadText">
+                                    Afdelingsmøde for JCI Slagelse.
+                                    Emner vil generelt omhandle vores projekter i Slagelse,
+                                    men fastlægges tættere på møderne.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon3 eNational">
+                            <div class="eFlexImg">
+                                <img src="img/eRunning.png" alt="gruppeaktiviteter">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Mellem runde SSDB: 10/3-18</h3>
+                                <p class="eEventBreadText">
+                                    Skriv om event her
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon4 eNational">
+                            <div class="eFlexImg">
+                                <img src="img/eTypewriter.png" alt="Forretningsmøde">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Forårskongres 2018 / København: 6/4-18</h3>
+                                <p class="eEventBreadText">
+                                    Forårskongres for Danmark i København.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon4 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eTeam.png" alt="team meeting">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Afdelingsmøde: 11/4-18</h3>
+                                <p class="eEventBreadText">
+                                    Afdelingsmøde for JCI Slagelse.
+                                    Emner vil generelt omhandle vores projekter i Slagelse,
+                                    men fastlægges tættere på møderne.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon5 eNational">
+                            <div class="eFlexImg">
+                                <img src="img/eBus.png" alt="Kursus">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>DLP Training II: 5/5-18</h3>
+                                <p class="eEventBreadText">
+                                    Kursus med fokus på at uddanne næstformænd.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon5 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eTeam.png" alt="team meeting">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Afdelingsmøde: 9/5-18</h3>
+                                <p class="eEventBreadText">
+                                    Afdelingsmøde for JCI Slagelse.
+                                    Emner vil generelt omhandle vores projekter i Slagelse,
+                                    men fastlægges tættere på møderne.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon5 eInterNational">
+                            <div class="eFlexImg">
+                                <img src="img/eGame.png" alt="Konference">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Conference Africe / Benin: 9/5-18</h3>
+                                <p class="eEventBreadText">
+                                    Konference for Afrika. Her vil være deltagere fra hele verden.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon5 eInterNational">
+                            <div class="eFlexImg">
+                                <img src="img/eGame.png" alt="Konference">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Conference Asia Pacific / Japan: 24/5-18</h3>
+                                <p class="eEventBreadText">
+                                    Konference for øst Asien. Her vil være deltagere fra hele verden.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon5 eNational">
+                            <div class="eFlexImg">
+                                <img src="img/eTablet.png" alt="stocks on tablet">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Bestyrelsesuddannelse: 26/5-18</h3>
+                                <p class="eEventBreadText">
+                                    Kursus med formål at uddanne nye bestyrelsesmedlemmer.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon6 eInterNational">
+                            <div class="eFlexImg">
+                                <img src="img/eGame.png" alt="Konference">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Europakonference / Letland: 6/6-18</h3>
+                                <p class="eEventBreadText">
+                                    Konference for Europa. Her vil være deltagere fra hele verden.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon6 eInterNational">
+                            <div class="eFlexImg">
+                                <img src="img/eGame.png" alt="Konference">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Conference of the Americas / USA: 6/6-18</h3>
+                                <p class="eEventBreadText">
+                                    Konference for Amerika. Her vil være deltagere fra hele verden.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon6 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eTeam.png" alt="team meeting">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Afdelingsmøde: 13/6-18</h3>
+                                <p class="eEventBreadText">
+                                    Afdelingsmøde for JCI Slagelse.
+                                    Emner vil generelt omhandle vores projekter i Slagelse,
+                                    men fastlægges tættere på møderne.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon8 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eTeam.png" alt="team meeting">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Afdelingsmøde / DGM: 8/8-18</h3>
+                                <p class="eEventBreadText">
+                                    Afdelingsmøde for JCI Slagelse.
+                                    Emner vil generelt omhandle vores projekter i Slagelse,
+                                    men fastlægges tættere på møderne.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon8 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eTeam.png" alt="team meeting">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Sommerfest: ?/8-18</h3>
+                                <p class="eEventBreadText">
+                                    Skriv om event her
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon8 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eTypewriter.png" alt="Forretningsmøde">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Valgforsamling: ?/8-18</h3>
+                                <p class="eEventBreadText">
+                                    Skriv om event her
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon8 eNational">
+                            <div class="eFlexImg">
+                                <img src="img/eTablet.png" alt="stocks on tablet">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Bestyrelsesuddannelse: 25/8-18</h3>
+                                <p class="eEventBreadText">
+                                    Kursus med formål at uddanne nye bestyrelsesmedlemmer.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon8 eNational">
+                            <div class="eFlexImg">
+                                <img src="img/eBus.png" alt="Kursus">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>DLP Training III: 25/8-18</h3>
+                                <p class="eEventBreadText">
+                                    Kursus med fokus på at uddanne næstformænd.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon9 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eTeam.png" alt="team meeting">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Afdelingsmøde: 12/9-18</h3>
+                                <p class="eEventBreadText">
+                                    Afdelingsmøde for JCI Slagelse.
+                                    Emner vil generelt omhandle vores projekter i Slagelse,
+                                    men fastlægges tættere på møderne.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon9 eNational">
+                            <div class="eFlexImg">
+                                <img src="img/eTypewriter.png" alt="Forretningsmøde">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Valgforsamling & DGM Region: 18/9-18</h3>
+                                <p class="eEventBreadText">
+                                    Skriv om event her
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon10 eNational">
+                            <div class="eFlexImg">
+                                <img src="img/eFood.png" alt="Generalforsamling">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>NK 2018 / Kolding: 5/10-18</h3>
+                                <p class="eEventBreadText">
+                                    Skriv om event her
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon10 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eTeam.png" alt="team meeting">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Afdelingsmøde / åbent arrangement: 10/10-18</h3>
+                                <p class="eEventBreadText">
+                                    Afdelingsmøde for JCI Slagelse.
+                                    Emner vil generelt omhandle vores projekter i Slagelse,
+                                    men fastlægges tættere på møderne.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon10 eInterNational">
+                            <div class="eFlexImg">
+                                <img src="img/eGame.png" alt="Konference">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Verdenskongres / Indien: 30/10-18</h3>
+                                <p class="eEventBreadText">
+                                    Konference for Indien. Her vil være deltagere fra hele verden.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon11 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eFistBump.png" alt="Teamwork">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Awardsaften: 9/11-18</h3>
+                                <p class="eEventBreadText">
+                                    Skriv om event her
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon11 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eRunning.png" alt="gruppeaktiviteter">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Afdelingsmøde SSDB: 14/11-18</h3>
+                                <p class="eEventBreadText">
+                                    Afdelingsmøde for JCI Slagelse.
+                                    Emner vil generelt omhandle vores projekter i Slagelse,
+                                    men fastlægges tættere på møderne.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <div class="eFlex ePaginate eMon12 eLocal">
+                            <div class="eFlexImg">
+                                <img src="img/eTeam.png" alt="team meeting">
+                            </div>
+
+                            <div class="eEventText">
+                                <h3>Afdelingsmøde / hygge: 12/12-18</h3>
+                                <p class="eEventBreadText">
+                                    Afdelingsmøde for JCI Slagelse.
+                                    Emner vil generelt omhandle vores projekter i Slagelse,
+                                    men fastlægges tættere på møderne.
+                                </p>
+                                <p class="ePrice"></p>
+                            </div>
+                        </div>
+
+                        <!-- Her slutter listen over events -->
+                    </div>
+                </div>
+                <div id="eEventNav"></div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="f_grid">
+            <div class="f_formula">
+
+                <h3>INTERESSERET?</h3>
+
+                <p>Bliv kontaktet for mere informaiton.</p>
+
+                <label class="f_name">Dit Navn</label>
+                <div class="f_name">
+                    <input type="text" placeholder="Navn">
+                </div>
+
+                <label class="f_email">E-mail</label>
+                <div class="f_email">
+                    <input type="email" placeholder="E-mail">
+                </div>
+
+                <label class="f_tlf">Mobil</label>
+                <div class="f_name">
+                    <input type="tel" placeholder="Mobil">
+                </div>
+
+                <button type="submit">SEND</button>
+            </div>
+
+            <div class="f_coop">
+
+                <div class="f_box1">
+
+                    <h3>VI SAMARBEJDER MED</h3>
+
+                    <p>I JCI Slagelse har vi indgået partnerskab med flere virksomheder.</p>
+
+                </div>
+
+                <div class="f_box2">
+
+                    <h3>The Upper Hill</h3>
+                    <h3>Spar Nord</h3>
+                    <h3>Dit Slagelse</h3>
+
+                </div>
+
+            </div>
+
+            <div class="f_contact">
+
+                <div class="f_text">
+                    <h3>KONTAKT INFORMATION</h3>
+
+                    <p>Du kan kontakte os på:</p>
+                </div>
+
+                <div class="f_icons">
+
+                    <i class="fa fa-envelope"> JCI@hotmail.com</i>
+
+                    <i class="fa fa-phone"> +45 11 22 33 44</i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="f_links">
+
+            <a href="">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+
+            <a href="">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+
+            <a href="">
+                <i class="fa fa-linkedin"></i>
+            </a>
+
+        </div>
+    </footer>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.simplePagination.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (e) {
+
+        var navOpen = 0;
+
+        $(".dropdown_btn").click(function () {
+            if (navOpen == 1) {
+                $(".h_content").stop().slideUp(200);
+                navOpen = 0;
+            }
+            else {
+                $(".h_content").stop().slideDown(200);
+                navOpen = 1;
+            }
+        });
+
+        $(window).resize(function (e) {
+            var width = $(window).width();
+
+            if (width >= 767) {
+                $(".h_content").css( "display", "grid");
+            }
+            else {
+                $(".h_content").css("display", "none");
+                navOpen = 0;
+            }
+        });
+
+        var eMon = 0;
+        $(".eDropBtn").click(function(){
+            if (eMon == 1) {
+                $(".eDropContent").css("display", "none");
+                eMon = 0;
+            }   else {
+                var eDropMenuHeight = 33 + $(".eDropBtn").offset().top;
+                $(".eDropContent").css("top", eDropMenuHeight);
+                $(".eDropContent").css("display", "flex");
+                eMon = 1;
+            }
+        });
+
+        var eLoc = 0;
+        $(".eDropBtn2").click(function(){
+            if (eLoc == 1) {
+                $(".eDropContent2").css("display", "none");
+                eLoc = 0;
+            }   else {
+                var eDropMenuHeight2 = 33 + $(".eDropBtn2").offset().top;
+                $(".eDropContent2").css("top", eDropMenuHeight2);
+                $(".eDropContent2").css("display", "flex");
+                eLoc = 1;
+            }
+        });
+
+        $(".eMon0Btn").click(function () {
+            location.reload();
+        });
+
+        $(".eMon1Btn").click(function () {
+            $(".eMon2, .eMon3, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
+            $(".eMon2, .eMon3, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
+            $(".eMon1").css("display", "flex");
+            $(".eMon1").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eMon2Btn").click(function () {
+            $(".eMon1, .eMon3, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
+            $(".eMon1, .eMon3, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
+            $(".eMon2").css("display", "flex");
+            $(".eMon2").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eMon3Btn").click(function () {
+            $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
+            $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
+            $(".eMon3").css("display", "flex");
+            $(".eMon3").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eMon4Btn").click(function () {
+            $(".eMon1, .eMon2, .eMon3, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
+            $(".eMon1, .eMon2, .eMon3, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
+            $(".eMon4").css("display", "flex");
+            $(".eMon4").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eMon5Btn").click(function () {
+            $(".eMon1, .eMon2, .eMon4, .eMon3, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
+            $(".eMon1, .eMon2, .eMon4, .eMon3, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
+            $(".eMon5").css("display", "flex");
+            $(".eMon5").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eMon6Btn").click(function () {
+            $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon3, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
+            $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon3, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
+            $(".eMon6").css("display", "flex");
+            $(".eMon6").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eMon7Btn").click(function () {
+            $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon3, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
+            $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon3, .eMon8, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
+            $(".eMon7").css("display", "flex");
+            $(".eMon7").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eMon8Btn").click(function () {
+            $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon3, .eMon9, .eMon10, .eMon11, .eMon12").css("display", "none");
+            $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon3, .eMon9, .eMon10, .eMon11, .eMon12").addClass("eHidden");
+            $(".eMon8").css("display", "flex");
+            $(".eMon8").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eMon9Btn").click(function () {
+            $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon3, .eMon10, .eMon11, .eMon12").css("display", "none");
+            $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon3, .eMon10, .eMon11, .eMon12").addClass("eHidden");
+            $(".eMon9").css("display", "flex");
+            $(".eMon9").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eMon10Btn").click(function () {
+            $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon3, .eMon11, .eMon12").css("display", "none");
+            $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon3, .eMon11, .eMon12").addClass("eHidden");
+            $(".eMon10").css("display", "flex");
+            $(".eMon10").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eMon11Btn").click(function () {
+            $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon3, .eMon12").css("display", "none");
+            $(".eMon1, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon3, .eMon12").addClass("eHidden");
+            $(".eMon11").css("display", "flex");
+            $(".eMon11").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eMon12Btn").click(function () {
+            $(".eMon3, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon3").css("display", "none");
+            $(".eMon3, .eMon2, .eMon4, .eMon5, .eMon6, .eMon7, .eMon8, .eMon9, .eMon10, .eMon11, .eMon3").addClass("eHidden");
+            $(".eMon12").css("display", "flex");
+            $(".eMon12").removeClass("eHidden");
+            $(".eDropContent").css("display", "none");
+            eMon = 0;
+        });
+
+        $(".eLoc0Btn").click(function () {
+            location.reload();
+        });
+
+        $(".eLoc1Btn").click(function () {
+            $(".eNational, .eInterNational").css("display", "none");
+            $(".eNational, .eInterNational").addClass("eHidden");
+            $(".eLocal").css("display", "flex");
+            $(".eLocal").removeClass("eHidden");
+            $(".eDropContent2").css("display", "none");
+            eLoc = 0;
+        });
+
+        $(".eLoc2Btn").click(function () {
+            $(".eLocal, .eInterNational").css("display", "none");
+            $(".eLocal, .eInterNational").addClass("eHidden");
+            $(".eNational").css("display", "flex");
+            $(".eNational").removeClass("eHidden");
+            $(".eDropContent2").css("display", "none");
+            eLoc = 0;
+        });
+
+        $(".eLoc3Btn").click(function () {
+            $(".eNational, .eLocal").css("display", "none");
+            $(".eNational, .eLocal").addClass("eHidden");
+            $(".eInterNational").css("display", "flex");
+            $(".eInterNational").removeClass("eHidden");
+            $(".eDropContent2").css("display", "none");
+            eLoc = 0;
+        });
+
+        var ePageParts = $(".ePaginate");
+        var ePumPages = ePageParts.length;
+        var ePerPage = 6;
+
+        ePageParts.slice(ePerPage).hide();
+        $("#eEventNav").pagination({
+            items: ePumPages,
+            itemsOnPage: ePerPage,
+            cssStyle: "light-theme",
+
+            onPageClick: function(ePageNum){
+                var start = ePerPage * (ePageNum - 1);
+                var end = start + ePerPage;
+
+                ePageParts.hide()
+                    .slice(start, end).show();
+            }
+        });
+
+        var eWebPopImgWidth = $(".eWebImgWidth").width();
+        $(window).load(function (e) {
+            var eWidth = $(window).width();
+
+            if (eWidth > 1200) {
+                $(".ePopularText").css("width", eWebPopImgWidth);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

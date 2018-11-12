@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Dominio de Pontas｜Fejl 403</title>
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/ddp.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!-- i <body> har man alt indhold på siden -->
+<body id="error_body">
+<div id="errorBox">
+    <img src="images/ddp_logo_mbl.png">
+    <h1>
+        Fejl 403
+    </h1>
+    <p>
+        Adgang nægtet. Tag mig tilbage til <a href="index.html">dominiodepontas.dk</a>
+    </p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function (e) {
+        $(document).ready(function(e){
+            $("#errorBox").fadeIn(2000);
+        });
+    });
+</script>
+</body>
+</html>

@@ -170,6 +170,15 @@ header {
 .skill {
   margin: 5vw 0; }
 
+.privateSkill {
+  margin: 5vw 0; }
+
+.private {
+  margin: 5vw 0; }
+
+.hobby {
+  margin: 5vw 0; }
+
 .errorPage {
   width: 90%;
   margin: 5vw auto; }
@@ -358,6 +367,27 @@ footer {
       .skills .grid #skillsWeb {
         width: 100%;
         grid-area: 1 / 3 / 5 / 4; }
+
+  .private {
+    margin: 50px 0 20px 0; }
+    .private .flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+
+  .privateSkill {
+    margin: 20px 0;
+    width: 30%; }
+    .privateSkill .flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .privateSkill .flex .hobby {
+        margin: 0;
+        width: 46.15%; }
+
+  #hobby {
+    width: 65%; }
 
   .errorPage {
     max-width: 1200px;

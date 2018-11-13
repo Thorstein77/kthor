@@ -107,6 +107,11 @@
                         gør med video produktion generelt. Der blev lavet script, shotlist, storyboard og animatics
                         inden vi startede udviklingen af vores design elementer.<br><br>
                     </p>
+
+                    <img src="images/ddpTeaser.png">
+                    <p>
+                        Eksempel på et design jeg var med til at udarbejde under et skoleprojekt.
+                    </p>
                 </div>
                 <br>
                 <div class="skill" id="skillsWeb">
@@ -144,8 +149,72 @@
             </div>
         </section>
 
-        <section>
-            <h2>Privat</h2>
+        <section class="private">
+            <h2>Om Mig - Personligt</h2>
+
+            <div class="flex">
+                <div class="privateSkill">
+                    <h3>
+                        Leveforhold
+                    </h3>
+                    <br>
+                    <p>
+                        Jeg bor i Slagelse med min kæreste, min hund og kat.
+                        Min kæreste og jeg har været sammen i over 5 år, og boet sammen i snart 2.<br><br>
+                        Min fritid bruger jeg primært på forskellige hobbier, f.eks. maler og spiller
+                        jeg Warhammer 40k.<br><br>
+                        Ud over hobbier bruger jeg også tid på at forbedre mine færdigheder
+                        i applikationer som Photoshop og Illustrator, samt bruger tid på at øve mig i
+                        opsætning af hjemmesider, kode i c# mm.<br><br>
+                    </p>
+                </div>
+
+                <div class="privateSkill" id="hobby">
+                    <h3>
+                        Hobby
+                    </h3>
+                    <br>
+                    <div class="flex">
+                        <div class="hobby">
+                            <p>
+                                Jeg ser ikke udelukkende mit hobby arbejde som værende tidsfordriv.<br><br>
+                                Når jeg f.eks. maler Warhammer bruger jeg en del tid på at finde farve kombinationer,
+                                normalt på
+                                <a href="https://color.adobe.com/create/color-wheel/" target="_blank" style="color: white">
+                                    Adobe's farve hjul.
+                                </a>
+                                Jeg får derfor øvet mig i farveteori, samtidig med jeg hygger mig med min hobby.<br><br>
+                                Skulle det havde interesse, kan noget af mit hobby arbejde ses ved at klikke på billedet her.
+                                <a href="https://www.instagram.com/thorstein77/" target="_blank">
+                                    <img src="images/starweaver.jpg">
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="hobby">
+                            <p>
+                                Nogle af mine hobbier er dog ikke helt så produktive. Efter en lang dag kan jeg godt
+                                finde på at stresse af ved at spille videospil.<br><br>
+                                Nogle weekender mødes jeg med venner for at spille Pathfinder, et pen and paper rollespil
+                                baseret på Dungeons and Dragons.<br><br>
+                            </p>
+
+                            <ul>
+                                <li>Warhammer</li>
+                                <li>Pen and Paper Rollespil</li>
+                                <li>Videospil</li>
+                            </ul>
+                            <br>
+                            <img src="images/Wanted.png">
+                            <p>
+                                Ovenfor er et eksempel på et lille sjovt projekt jeg har lavet i Photoshop
+                                i min fritid.
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 

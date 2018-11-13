@@ -253,6 +253,18 @@ header{
   margin: 5vw 0;
 }
 
+.privateSkill{
+margin: 5vw 0;
+}
+
+.private{
+  margin: 5vw 0;
+}
+
+.hobby{
+  margin: 5vw 0;
+}
+
 
 .errorPage{
   width: 90%;
@@ -560,8 +572,36 @@ footer{
     }
   }
 
+  .private{
+    margin: 50px 0 20px 0;
 
+    .flex{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
 
+    }
+  }
+
+  .privateSkill{
+    margin: 20px 0;
+    width: 30%;
+
+    .flex{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .hobby{
+        margin: 0;
+        width: 46.15%;
+      }
+    }
+  }
+
+  #hobby{
+    width: 65%;
+  }
 
   .errorPage{
     max-width: 1200px;

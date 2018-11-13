@@ -159,7 +159,7 @@
                     </h3>
                     <br>
                     <p>
-                        Jeg bor i Slagelse med min kæreste, min hund og kat.
+                        Jeg er 29 år og bor i Slagelse med min kæreste, min hund og kat.
                         Min kæreste og jeg har været sammen i over 5 år, og boet sammen i snart 2.<br><br>
                         Min fritid bruger jeg primært på forskellige hobbier, f.eks. maler og spiller
                         jeg Warhammer 40k.<br><br>

@@ -8,7 +8,7 @@
     <?php
     require ("php/head.php");
     ?>
-    <title>Sigende titel</title>
+    <title>Om Mig - Kompetencer</title>
 </head>
 
 <!-- i <body> har man alt indhold på siden -->

@@ -23,11 +23,11 @@
             Om mig
         </h1>
 
-        <section>
+        <section class="skills">
             <h2>Kompetencer</h2>
 
-            <div class="comp">
-                <div>
+            <div class="grid">
+                <div class="skill" id="skillsApps">
                     <h3>
                         Software og applikationer
                     </h3>
@@ -50,8 +50,8 @@
                         <li>Adobe After Effects</li>
                     </ul>
                 </div>
-
-                <div>
+                <br>
+                <div class="skill" id="skillsWide">
                     <h3>
                         Faglige kompetencer
                     </h3>
@@ -79,8 +79,8 @@
                         Slagelse Produktionsskole og lavet en kort animationsfilm for Slagelse Musikhus.
                     </p>
                 </div>
-
-                <div>
+                <br>
+                <div class="skill" id="skillsDesign">
                     <h3>
                         Design
                     </h3>
@@ -108,8 +108,8 @@
                         inden vi startede udviklingen af vores design elementer.<br><br>
                     </p>
                 </div>
-
-                <div>
+                <br>
+                <div class="skill" id="skillsWeb">
                     <h3>
                         Webdevelopment
                     </h3>
@@ -140,6 +140,7 @@
                         <li>SQL</li>
                     </ul>
                 </div>
+                <br>
             </div>
         </section>
 
